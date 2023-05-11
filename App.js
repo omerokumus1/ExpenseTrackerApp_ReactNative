@@ -7,6 +7,7 @@ import AllExpensesScreen from './screens/AllExpensesScreen';
 import ManageExpenseScreen from './screens/ManageExpenseScreen';
 import { GlobalStyles } from './constants/styles';
 import { Ionicons } from '@expo/vector-icons';
+import IconButton from './components/UI/IconButton';
 
 const Stack = createNativeStackNavigator();
 const BottomTabs = createBottomTabNavigator();
@@ -30,6 +31,9 @@ function ExpensesOverview() {
           tabBarIcon: ({ color, size }) => {
             <Ionicons name="hourglass" color={color} size={size} />;
           },
+          headerRight: ({ tintColor }) => (
+            <IconButton icon="add" color={tintColor} size={24} />
+          ),
         }}
       />
       <BottomTabs.Screen
