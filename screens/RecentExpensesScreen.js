@@ -14,7 +14,11 @@ function RecentExpensesScreen() {
   });
 
   return (
-    <ExpensesOutput expenses={recentExpenses} expensesPeriod="Last 7 Days" />
+    <ExpensesOutput
+      expenses={recentExpenses}
+      expensesPeriod="Last 7 Days"
+      fallbackText="No registered expense is found for the last 7 days"
+    />
   );
 }
 export default RecentExpensesScreen;
