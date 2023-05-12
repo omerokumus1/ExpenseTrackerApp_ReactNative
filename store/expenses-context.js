@@ -64,6 +64,7 @@ const DUMMY_EXPENSES = [
     date: new Date('2021-02-18'),
   },
 ];
+
 export const ExpensesContext = createContext({
   expenses: [],
   addExpense: ({ description, amount, date }) => {},
