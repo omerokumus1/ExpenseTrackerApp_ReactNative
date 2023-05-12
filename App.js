@@ -40,7 +40,7 @@ function ExpensesOverview() {
           title: 'Recent Expenses',
           tabBarLabel: 'Recent',
           tabBarIcon: ({ color, size }) => {
-            <Ionicons name="hourglass" color={color} size={size} />;
+            return <Ionicons name="hourglass" color={color} size={size} />;
           },
         }}
       />
@@ -51,7 +51,7 @@ function ExpensesOverview() {
           title: 'All Expenses',
           tabBarLabel: 'All Expenses',
           tabBarIcon: ({ color, size }) => {
-            <Ionicons name="calendar" color={color} size={size} />;
+            return <Ionicons name="calendar" color={color} size={size} />;
           },
         }}
       />
