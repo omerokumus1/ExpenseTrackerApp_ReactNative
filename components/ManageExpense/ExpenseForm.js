@@ -9,7 +9,7 @@ function getInitialState(defaultValues) {
     const isValid = true;
     return {
       amount: { value: defaultValues.amount.toString(), isValid },
-      date: { value: defaultValues.date.toString().slice(0, 10), isValid },
+      date: { value: defaultValues.date.toISOString().slice(0, 10), isValid },
       description: { value: defaultValues.description, isValid },
     };
   }
